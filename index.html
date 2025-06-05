@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">logo</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">News</a></li>
+                    <li class="btn"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>3D game Dev</h2>
+                <h1>Work that we produce for our clients</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+                <button class="btn">Get more details</button>
+            </div>
+            <img src="/img/joistick.svg" alt="">
+        </div>
+
+        <div class="container trending">
+            <a class="see-all" href="#">SEE ALL</a>
+            <h3>Currently Trending Games</h3>
+
+            <div class="games">
+                <div class="block">
+                    <img src="/img/Rectangle 23.svg" alt="">
+                    <span><img src="/img/Fire.svg" alt="">40 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="/img/Rectangle 24.svg" alt="">
+                    <span><img src="/img/Fire.svg" alt="">40 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="/img/Rectangle 25.svg" alt="">
+                    <span><img src="/img/Fire.svg" alt="">40 Followers</span>
+                </div>
+                <div class="block">
+                    <img src="/img/Rectangle 26.svg" alt="">
+                    <span><img src="/img/Fire.svg" alt="">40 Followers</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container big-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="container banner">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <img src="/img/Rectangle 4.svg" alt="">
+        </div>
+
+        <div class="container email">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="block">
+                <div>
+                    <h4>Stay in the loop</h4>
+                    <p>Subscribe to receive the latest news and updates about TDA. 
+                        We promise not to spam you!</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if (!email.includes('@')) alert('Нет символа @');
+            else if (!email.includes('.')) alert('Нет символа .');
+            else alert('Все отлично!');
+        }
+    </script>
+</body>
+</html>
